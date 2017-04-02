@@ -8,10 +8,12 @@ const App = ({state, dispatch}) => {
   return (
     <div className="container">
       <NavBar />
-      <HomePage />
-      <BookPage state={state}/>
     </div>
   )
 }
 
 export default App
+
+
+// <HomePage />
+// <BookPage state={state}/>
