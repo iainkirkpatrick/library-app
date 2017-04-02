@@ -4,8 +4,7 @@ import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 import { devToolsEnhancer } from 'redux-devtools-extension'
 
-import App from './App';
-import './index.css';
+import App from './components/App';
 import reducer from './redux/reducer'
 
 const root = document.getElementById('root')
