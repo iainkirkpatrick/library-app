@@ -1,14 +1,19 @@
-// import React from 'react'
-// import { Route, IndexRoute } from 'react-router'
-// import HomePage from './components/mains/HomePage'
-// import AboutPage from './components/mains/AboutPage'
-// import BookPage from './components/mains/BookPage'
-// import App from './components/App'
-//
-// export default (
-//   <Route path='/' component={App}>
-//     <IndexRoute component={HomePage}></IndexRoute>
-//     <Route path='/about' component={AboutPage}></Route>
-//     <Route path='/books' component={BookPage}></Route>
-//   </Route>
+import React from 'react'
+import { Router, Route } from 'react-router'
+
+import App from './components/App'
+import AboutPage from './components/mains/AboutPage'
+import BookPage from './components/mains/BookPage'
+import NotFound from './components/mains/NotFound'
+
+
+// const Routes = (props) => (
+//   <Router {...props}>
+//     <Route path="/" component={App} />
+//     <Route path="/about" component={AboutPage} />
+//     <Route path="/books" component={BookPage} />
+//     <Route path="*" component={NotFound} />
+//   </Router>
 // )
+//
+// export default Routes
