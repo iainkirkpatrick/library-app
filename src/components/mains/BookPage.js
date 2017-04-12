@@ -12,7 +12,7 @@ const BookPage = ({state, dispatch}) => {
     <div>
       <h3>Books</h3>
       <ul>
-        {state.books.map((book, i) => <li key={i}>{book.title}</li>)}
+        {state.books.map((book, i) => <li key={i}>{book.title} <img src={book.cover} alt={`Cover image of ${book.title}`}></img></li>)}
       </ul>
       <div>
       <h3>Books Form</h3>

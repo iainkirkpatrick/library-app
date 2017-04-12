@@ -8,6 +8,7 @@ const App = ({state, dispatch}) => {
   return (
     <div className="container">
       <NavBar />
+      <BookPage state={state}/>
     </div>
   )
 }
@@ -16,4 +17,3 @@ export default App
 
 
 // <HomePage />
-// <BookPage state={state}/>
