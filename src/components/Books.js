@@ -1,7 +1,7 @@
 import React from 'react'
 
 const BookPage = ({state}) => {
-  // console.log(state)
+  console.log("Book state: ", state)
   return (
     <div>
       <h3>Books</h3>

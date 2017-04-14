@@ -7,8 +7,8 @@ import AboutPage from './components/About'
 import BookPage from './components/Books'
 import NotFound from './components/NotFound'
 
-const App = ({state}) => {
-  console.log(state)
+const App = ({state, dispatch}) => {
+  console.log("App state: ", state)
   return (
     <Router>
       <div>
