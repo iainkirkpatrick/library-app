@@ -1,17 +1,25 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import NavBar from './components/Nav'
+import Home from './components/Home'
+import Cart from './components/Cart'
+import AboutPage from './components/About'
+import BookPage from './components/Books'
+import NotFound from './components/NotFound'
 
-const App = ({state, dispatch}) => {
+const App = ({state}) => {
+  // console.log(state);
   return (
-    <div className="App">
-      <div className="App-header">
-        <h2>Welcome to React</h2>
+    <Router>
+      <div>
+        <NavBar />
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={AboutPage} />
+        <Route path="/cart" component={Cart} />
+        <Route path="/books" component={BookPage} />
       </div>
-      <p className="App-intro">
-        To get started, edit <code>src/App.js</code> and save to reload.
-      </p>
-      <p>The initial state is {state.text}</p>
-    </div>
+    </Router>
   )
 }
 
-export default App
+export default App;
