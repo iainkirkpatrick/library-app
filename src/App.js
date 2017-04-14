@@ -8,12 +8,13 @@ import BookPage from './components/Books'
 import NotFound from './components/NotFound'
 
 const App = ({state}) => {
-  // console.log(state);
+  console.log(state)
   return (
     <Router>
       <div>
         <NavBar />
         <Route exact path="/" component={Home} />
+        <Route path="/home" component={Home} />
         <Route path="/about" component={AboutPage} />
         <Route path="/cart" component={Cart} />
         <Route path="/books" component={BookPage} />

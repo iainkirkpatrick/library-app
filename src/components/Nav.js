@@ -6,7 +6,7 @@ const NavBar = () => {
     <nav>
       <div className="collapse navbar-collapse">
         <div className="navbar-header">
-          <a className="navbar-brand" href="/">Murakami books</a>
+          <NavLink className="navbar-brand" to="/home">Bookshop App</NavLink>
         </div>
         <ul className="nav navbar-nav">
           <li><NavLink activeClassName="active" to="/books">Books</NavLink></li>
