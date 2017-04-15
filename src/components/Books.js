@@ -1,11 +1,15 @@
 import React from 'react'
 
-const BookPage = ({state}) => {
-  console.log("Book state: ", state)
+const BookPage = (props) => {
+  console.log("Book state: ", props.books)
   return (
     <div>
       <h3>Books</h3>
-      <p>Books will go here</p>
+      {
+        props.books.map((book) => {
+          return <p>{book.title}</p>
+        })
+      }
     </div>
   )
 }
