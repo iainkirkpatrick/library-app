@@ -6,8 +6,8 @@ const BookPage = (props) => {
     <div>
       <h3>Books</h3>
       {
-        props.books.map((book) => {
-          return <p>{book.title}</p>
+        props.books.map((book, i) => {
+          return <p key={i}>{ book.title }</p>
         })
       }
     </div>
