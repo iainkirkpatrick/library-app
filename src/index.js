@@ -11,13 +11,11 @@ import initialState from './redux/initialState'
 const root = document.getElementById('root')
 const store = createStore(reducer, initialState, devToolsEnhancer())
 
-store.subscribe( () => {
-  ReactDOM.render(
-    <Provider store={store}>
-      <App state={store.getState()} dispatch={store.dispatch}/>
-    </Provider>,
-    root
-  )
-})
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  root
+)
 
 store.dispatch({type: 'INIT'})

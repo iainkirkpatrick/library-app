@@ -9,7 +9,7 @@ import BooksContainer from './containers/Books'
 import NotFound from './components/NotFound'
 
 const App = ({state, dispatch}) => {
-  console.log("App state: ", state)
+  // console.log("App state: ", state)
   return (
     <Router>
       <div>
